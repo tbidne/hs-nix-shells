@@ -262,13 +262,13 @@ in
   };
 
   ghc983 = mkSet {
-    hash = "5e4fbfb6b3de1aa2872b76d49fafc942626e2add";
+    hash = "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab";
     versName = "ghc983";
     overrides = _: prev: {
-      apply-refact = prev.apply-refact_0_14_0_0;
-      fourmolu = prev.fourmolu_0_15_0_0;
-      hlint = prev.hlint_3_8;
-      ormolu = prev.ormolu_0_7_4_0;
+      #apply-refact = prev.apply-refact_0_14_0_0;
+      #fourmolu = prev.fourmolu_0_15_0_0;
+      #hlint = prev.hlint_3_8;
+      #ormolu = prev.ormolu_0_7_4_0;
     };
 
     poorToolCache = [
@@ -286,8 +286,8 @@ in
     versName = "ghc984";
 
     unsupported = [
-      "apply-refact"
-      "hlint"
+      #"apply-refact"
+      #"hlint"
     ];
 
     unstableHash = true;
